@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+/* font size de h */
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: orange
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-left: 40%;
+}
+
+body {
+    background-image: url(../img/bg-paper.jpg);
+
+
+}
+
+/* inicia nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 25vh;
+    width: 100%;
+    background-color: rgba(94, 118, 252, .7);
+    font-size: 2em;
+}
+
+.enlace {
+    position: relative;
+    padding: 40px 40px;
+}
+
+.logo {
+    /* order: 1; */
+    height: 2%;
+    margin-bottom: 5px;
+}
+
+nav a img {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+nav ul {
+    display: flex
+}
+
+nav ul li {
+    display: flex;
+    padding: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 50px;
+    text-decoration: none;
+    color: orange;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+nav ul li a:hover {
+    color: black;
+    font-weight: 500;
+}
+
+.checkbtn {
+    order: 2;
+    justify-self: flex-end;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: orange;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
+/* termina nav */
+
+/* inicia header */
+header {
+    text-align: center;
+}
+
+header img {
+    display: inline-block;
+    margin-top: 15px;
+    width: 24vw;
+    height: 35vh;
+}
+
+header img:hover {
+    height: 45vh;
+    transition: all .35s ease;
+
+}
+header input{
+    width: 100%;
+    border: 10px bold gray;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "header header header header"
+        "main main aside aside"
+        "main main aside aside"
+        "pie pie pie pie";
+
+}
+
+.header-grid {
+    grid-area: header;
+}
+
+.main-grid {
+    grid-area: main;
+}
+
+.aside-grid {
+    grid-area: aside;
+}
+
+.pie-grid {
+    grid-area: pie;
+}
+
+.vingrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "vinhead vinhead vinhead vinhead"
+    "vinaside vinmain vinmain vinmain "
+    "vinaside  vinmain vinmain vinmain"
+    "vinpie vinpie vinpie vinpie" ;
+}
+.vinh-grid{
+    grid-area: vinhead;
+}
+.vinm-grid{
+    grid-area: vinmain;
+}
+.vina-grid{
+    grid-area: vinaside;
+}
+.vinp-grid{
+    grid-area: vinpie;
+}
+/* inicia main */
+main{
+    display: flex;
+}
+main section{
+    display: flex;
+    flex-direction: row;
+}
+
+main section {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+}
+
+
+li figure {
+    list-style: none;
+    display: inline-block;
+}
+
+main h2 {
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-left: 3px;
+
+}
+
+main p {
+    border: 10px bold orange;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+/* termina main */
+
+/* incia aside */
+
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+
+}
+
+aside h2 {
+    margin-right: 50px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 1, 8em;
+
+}
+
+aside li a{
+    text-decoration: none;
+    font-size: 1em;
+    font-family:'Oswald', sans-serif ;
+    color: black;
+
+}
+aside li a:hover{
+    color: orange;
+}
+button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+button img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15vw;
+    margin-top: 5px;
+
+}
+
+.modal-est {
+    color: orange;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+.modal-bg {
+    background-color: rgba(94, 118, 252, .9);
+}
+
+.modal-bgim {
+    background-image: url(../img/bg-paper.jpg);
+}
+
+/* termina aside */
+/* inicia figure */
+/* figure{ 
+    display: flex;
+    flex-direction: row;
+
+
+}
+figure p {
+
+    font-family: 'Oswald', sans-serif; 
+    color:orange 
+   
+} */
+/* termina figure */
+
+/* incia footer */
+footer{
+   display: flex;
+   justify-content: center;
+   align-content: flex-end;
+ 
+  
+
+}
+
+/* inicia clases */
+/* header input {    
+    width: 100%;
+    font-size: x-large;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-color{
+    background-color: rgba(94, 118, 252, .5);
+}
+.informacion__vinilos {
+   margin: 50px 200px;
+   width: 70%;
+}
+
+
+.tamaño__imagenes{
+    width: 50%
+
+} */
+
+
+/* .position__top{
+    top: 100;    
+    left: 500;
+} */
+/* .tamaño__pie--md{
+margin-top: 40px;
+
+}
+
+.artista__tamaño--large{
+   width: 40%;
+    
+}
+ 
+.artista__tamaño--xl{
+    width: 70%;
+}
+.position__fig{
+    margin: 20px 0;
+}
+
+.artista--position{
+  flex-direction: row;
+  
+} */
+
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        /* display: flex; */
+        font-size: 1.7rem;
+        height: 25vh;
+
+    }
+
+    .logo {
+        display: flex;
+        height: 20vh;
+
+    }
+
+    ul {
+        /* display: flex; */
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(94, 118, 252, .8);
+        top: 25vh;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        align-items: center;
+        margin: 25px;
+        line-height: 5px;
+    }
+
+    nav ul li a {
+        line-height: 5px;
+        /* margin-right: 20vh; */
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+
+    header h1 {
+        margin-top: 15px;
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    header img {
+        margin-top: 15px;
+        width: 24vw;
+        height: 15vh;
+    }
+
+    header img:hover {
+        height: 20vh;
+
+    }
+    header input{
+        margin-top: 20px;
+        width: 100vw;
+        border: 10px bold gray;
+        text-align: center;
+        font-style: bold;
+        color: gray;
+        
+    }
+
+    main h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        margin-left: 3px;
+
+    }
+
+    main p {
+        color: black;
+        font-size: 1rem;
+        margin-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 1.7rem;
+        margin-right: 15px;
+
+    }
+
+    aside h2 {
+        position: absolute;
+        justify-content: space;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    aside figure {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 20px 20px;
+
+    }
+
+    aside figure p {
+        color: orange;
+        font-family: 'Oswald', sans-serif;
+        font: .5rem;
+        text-align: center;
+
+    }
+    aside {
+        margin-top:10px;
+        display: flex;
+        justify-content: center;
+    }
+    aside ul li a{
+        font-family:'Oswald', sans-serif; ;
+        font-size: 1em;
+        text-decoration: none;
+        
+
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        bottom: 50vh;
+    }
+
+    .margin-yt {
+        margin-bottom: 15px;
+    }
+
+    button {
+        top: 50px;
+        left: 5px;
+        display: flex;
+        flex-direction: row;
+        width: 30vw;
+        height: 15vh;
+
+    }
+
+    aside button {
+        margin-left: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    button img {
+        display: flex;
+        width: 25vw;
+        margin-top: 5px;
+
+    }
+
+    .modal-est {
+        color: orange;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.3rem;
+        text-align: center;
+
+    }
+
+    .modal-bg {
+        background-color: rgba(94, 118, 252, .9);
+    }
+
+    .modal-bgim {
+        background-image: url(../img/bg-paper.jpg);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "pie";
+    }
+
+    .header-grid {
+        grid-area: header;
+    }
+
+    .main-grid {
+        grid-area: main;
+    }
+
+    .aside-grid {
+        grid-area: aside;
+    }
+
+    .pie-grid {
+        grid-area: pie;
+    }
+    
