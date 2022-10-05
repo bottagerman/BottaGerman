@@ -41,7 +41,7 @@ nav {
     flex-direction: row;
     align-items: center;
     height: 25vh;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(94, 118, 252, .7);
     font-size: 2em;
 }
@@ -52,15 +52,8 @@ nav {
 }
 
 .logo {
-    /* order: 1; */
     height: 2%;
     margin-bottom: 5px;
-}
-
-nav a img {
-    display: flex;
-    justify-content: flex-start;
-
 }
 
 nav ul {
@@ -69,12 +62,12 @@ nav ul {
 
 nav ul li {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     list-style: none;
 }
 
 nav ul li a {
-    padding: 50px;
+    padding: 25px;
     text-decoration: none;
     color: orange;
     font-family: 'Oswald', sans-serif;
@@ -84,6 +77,7 @@ nav ul li a {
 nav ul li a:hover {
     color: black;
     font-weight: 500;
+    transition: all .5s;
 }
 
 .checkbtn {
@@ -105,11 +99,15 @@ nav ul li a:hover {
 
 /* inicia header */
 header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header h1{
+margin-top: 35px;
 }
 
 header img {
-    display: inline-block;
     margin-top: 15px;
     width: 24vw;
     height: 35vh;
@@ -123,6 +121,9 @@ header img:hover {
 header input{
     width: 100%;
     border: 10px bold gray;
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
 }
 .grid {
     display: grid;
@@ -177,17 +178,18 @@ header input{
 /* inicia main */
 main{
     display: flex;
-}
-main section{
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
 }
 
 main section {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     color: black;
     font-size: 1.5rem;
     line-height: 1.8rem;
+    justify-content: center;
 
 }
 
@@ -206,10 +208,12 @@ main h2 {
 }
 
 main p {
+
     border: 10px bold orange;
     font-size: 1.5rem;
     font-family: 'Oswald', sans-serif;
 }
+
 /* termina main */
 
 /* incia aside */
@@ -219,19 +223,21 @@ aside {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-end;
-
-
 
 }
 
 aside h2 {
-    margin-right: 50px;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
-    font-size: 1, 8em;
+    font-size: 2em;
 
+}
+aside h3{
+    margin-left: 20px;
+}
+aside ul{
+    list-style: none;
+    font-size: 1.5em;
 }
 
 aside li a{
@@ -249,12 +255,10 @@ button {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    height: auto;
+
 }
 
 button img {
-    display: flex;
-    flex-wrap: wrap;
     width: 15vw;
     margin-top: 5px;
 
@@ -278,7 +282,7 @@ button img {
 
 /* termina aside */
 /* inicia figure */
-/* figure{ 
+/* figure{
     display: flex;
     flex-direction: row;
 
@@ -286,9 +290,9 @@ button img {
 }
 figure p {
 
-    font-family: 'Oswald', sans-serif; 
-    color:orange 
-   
+    font-family: 'Oswald', sans-serif;
+    color:orange
+
 } */
 /* termina figure */
 
@@ -297,13 +301,13 @@ footer{
    display: flex;
    justify-content: center;
    align-content: flex-end;
- 
-  
+
+
 
 }
 
 /* inicia clases */
-/* header input {    
+/* header input {
     width: 100%;
     font-size: x-large;
 }
@@ -328,7 +332,7 @@ footer{
 
 
 /* .position__top{
-    top: 100;    
+    top: 100;
     left: 500;
 } */
 /* .tamaño__pie--md{
@@ -338,9 +342,9 @@ margin-top: 40px;
 
 .artista__tamaño--large{
    width: 40%;
-    
+
 }
- 
+
 .artista__tamaño--xl{
     width: 70%;
 }
@@ -350,16 +354,15 @@ margin-top: 40px;
 
 .artista--position{
   flex-direction: row;
-  
+
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 907px) {
     .checkbtn {
         display: block;
     }
 
     nav {
-        /* display: flex; */
         font-size: 1.7rem;
         height: 25vh;
 
@@ -371,8 +374,7 @@ margin-top: 40px;
 
     }
 
-    ul {
-        /* display: flex; */
+    nav ul {
         flex-direction: column;
         position: fixed;
         width: 100%;
@@ -401,70 +403,61 @@ margin-top: 40px;
 
     }
 
+    header img{
+        width: 100%;
+        height: 35vh;
+
+    }
+
     header h1 {
         margin-top: 15px;
         font-size: 2rem;
-        text-align: center;
 
-    }
-
-    header img {
-        margin-top: 15px;
-        width: 24vw;
-        height: 15vh;
-    }
-
-    header img:hover {
-        height: 20vh;
-
-    }
-    header input{
-        margin-top: 20px;
-        width: 100vw;
-        border: 10px bold gray;
-        text-align: center;
-        font-style: bold;
-        color: gray;
-        
     }
 
     main h2 {
+        margin-top: 20px;
         text-align: center;
-        font-size: 1.7rem;
+        font-size: 2rem;
         margin-left: 3px;
 
     }
-
+    main section{
+        flex-direction: row;
+    }
     main p {
         color: black;
-        font-size: 1rem;
-        margin-top: 5px;
+        font-size: 1.5rem;
+        margin-top: 30px;
         padding-left: 10px;
         padding-right: 10px;
 
     }
-    main section{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
 
     aside {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         text-align: center;
         font-size: 1.7rem;
         margin-right: 15px;
+    }
+    aside ul{
+      flex-direction: row;
+      list-style: none;
+      margin-right: 25px;
+
 
     }
 
     aside h2 {
-        position: absolute;
-        justify-content: space;
-        text-align: center;
-        flex-wrap: wrap;
+        margin-left: 18px;
+      
+
+    }
+    
+    aside button {
+        width: 100%;
+        height: auto;
+
+
     }
 
     aside figure {
@@ -483,21 +476,15 @@ margin-top: 40px;
         text-align: center;
 
     }
-    aside {
-        margin-top:10px;
-        display: flex;
-        justify-content: center;
-    }
+
     aside ul li a{
-        font-family:'Oswald', sans-serif; ;
+        font-family:'Oswald', sans-serif;
         font-size: 1em;
         text-decoration: none;
-        
+
 
     }
     footer {
-        display: flex;
-        justify-content: center;
         margin-top: 30px;
         bottom: 50vh;
     }
@@ -507,23 +494,13 @@ margin-top: 40px;
     }
 
     button {
-        top: 50px;
         left: 5px;
-        display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        width: 30vw;
-        height: 15vh;
 
-    }
-
-    aside button {
-        margin-left: 5px;
-        display: flex;
-        flex-direction: row;
     }
 
     button img {
-        display: flex;
         width: 25vw;
         margin-top: 5px;
 
@@ -571,4 +548,4 @@ margin-top: 40px;
     .pie-grid {
         grid-area: pie;
     }
-    
+}
