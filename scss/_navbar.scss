@@ -1,0 +1,40 @@
+.botonera{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: $secondaryColor;
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+            padding: 10px;
+            a{
+                text-decoration: none;
+                color: $mainColor;
+                font-family: $fontMain;
+                font-size: $textL;
+                &:hover{
+                    color: black;
+                    font-weight: $textBold;
+                    transition: all .5s;
+                }
+                
+
+            }
+        }
+    }
+
+}
+
+.checkbtn{
+    order:2;
+    cursor: pointer;
+    font-size: $textL;
+    color: $mainColor;
+    display: none;
+    margin-right: 20px;
+}
+#check{
+    display: none;
+}

@@ -1,0 +1,31 @@
+@media screen and (max-width: 907px){
+    .botonera{
+        height: $vh-25;
+        ul{
+            flex-direction: column;
+            position: fixed;
+            width: $w-100;
+            height: $vh-100;
+            background-color: $secondaryColor;
+            top: $vh-25;
+            left: 100%;
+            text-align: center;
+            transition: all .5s;
+
+            li{
+                display: block;
+                align-items: center;
+                margin: 25px 0;
+                line-height: 5px;
+            }
+        }   
+    }
+}
+.checkbtn{
+    display:block;
+}
+
+#check:checked~ul {
+    left: 0;
+
+}
