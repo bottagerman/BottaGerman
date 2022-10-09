@@ -1,64 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist de Nada de Vinilos</title>
-    <link rel="icon" href="../img/favicon.ico" type="img/jpg">
-    <link rel="stylesheet" href="../css/main.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Esta es mi lista de deseos, en el que se encuentran los que quizas son mis proximos discos a conseguir">
+   <meta name="keywords" content="Vinilos, vinyl, Los redondos, Billy Bond, King Crimson, Black Sabbath, Rock, heavy metal, progresivo, sui generis, seru giran, charly, ozzy, robert fripp">
+   <meta name="author" content="German Botta">
+   <title>Wishlist de Nada de Vinilos</title>
+   <link rel="icon" href="../img/favicon.ico" type="img/jpg">
+   <link rel="stylesheet" href="../css/main.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
    <!-- Inicia nav -->
-   <nav class="botonera">
-      <input type="checkbox" id="check" >
-      <label for="check" class="checkbtn">
-         <i class="fas fa-bars"></i>
-      </label>
-      <a href=../index.html class="enlace"><img src="../img/logo-3-copy.png" alt="logo de nada de vinilos" class="logo"> </a>
-      <ul>
-         <li>
-            <a href="vinilos.html">Vinilos</a>
-         </li>
-       
-      
-         <li>
-            <a href="artistas.html">Artistas</a>
-         </li>
-       
-      
-         <li>
-            <a href="historia.html">Historia</a>
-         </li>
-       
-      
-         <li>
-            <a href="wishlist.html">Wishlist</a>
-         </li>
-      </ul> 
-
+   <nav class="navbar navbar-expand-lg botonera">
+      <div class="container-fluid">
+         <a class="navbar-brand animate__animated animate__rotateIn" href="../index.html">
+            <img src="../img/logo-3-copy.png" alt="disco de vinilo logo de nada de vinilos">
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="vinilos.html">Vinilos</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="artistas.html">Artistas</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="guia.html">Guía</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="wishlist.html">Wishlist</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
    <!-- termina nav -->
+   <div class="wi-grid">
+      <!-- comienza header -->
+      <header class="encabezado-wi">
+         <input type="search" value="Vinilos, bandas, etc..">
+         <h1>Lista de deseos</h1>
+      </header>
+      <!-- termina header -->
 
-   <!-- comienza header -->
-   <header>
-      <input type="search">
-      <h1>Lista de deseos</h1> 
-   </header>
-   <!-- termina header -->
+      <!-- comienza main -->
+      <main class="contenido-wi">
+         <section>
+            <div>
+               <!-- img trigger modal  -->
+               <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="../img/wl-baion.webp"
+                     alt="portada album patricio rey y sus redonditos de ricota - un baion para el ojo idiota">
+               </button>
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content modal-est modal-bgim">
+                        <div class="modal-header modal-bg">
+                           <h2 class="modal-title" id="exampleModalLabel">Patricio Rey y sus redonditos de ricota - Un
+                              baion para el ojo idiota</h2>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <figure>
+                              <img src="../img/wl-baion.webp"
+                                 alt="portada album patricio rey y sus redonditos de ricota - un baion para el ojo idiota">
+                              <!-- incia accordion -->
+                              <div class="accordion accordion-flush" id="accordionFlushExample">
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="flush-headingOne">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                          aria-controls="flush-collapseOne">
+                                          Track-list
+                                       </button>
+                                    </h3>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                       aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                       <p class="accordion-body">
+                                       <ul>
+                                          <li>
+                                             «Masacre en el puticlub» (4:48)
+                                          </li>
+                                          <li>
+                                             «Noticias de ayer» (4:25)
+                                          </li>
+                                          <li>
+                                             «Aquella solitaria vaca cubana» (4:16)
+                                          </li>
+                                          <li>
+                                             «Todo preso es político» (5:56)
+                                          </li>
+                                          <li>
+                                             «Vencedores vencidos» (3:30)
+                                          </li>
+                                          <li>
+                                             «Vamos las bandas» (3:27)
+                                          </li>
+                                          <li>
+                                             «Ella debe estar tan linda» (4:02)
+                                          </li>
+                                          <li>
+                                             «Todo un palo» (7:25)
+                                          </li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="flush-headingTwo">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                          aria-controls="flush-collapseTwo">
+                                          Data
+                                       </button>
+                                    </h3>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                       aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                       <p class="accordion-body">
+                                          Publicación
+                                          9 de mayo de 1988
+                                          Género(s)
+                                          Rock
+                                          Duración 37:51
+                                          Discográfica Del Cielito Records
+                                          Productor(es) Patricio Rey y sus Redonditos de Ricota
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- termina accordion -->
+                           </figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <!-- img trigger modal -->
+               <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  <img src="../img/wl-kc.webp" alt="portada King Crimson - The court of the crimson king">
+               </button>
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content modal-est modal-bgim">
+                        <div class="modal-header modal-bg">
+                           <h2 class="modal-title" id="exampleModalLabel">King Crimson - The court of the crimson king</h2>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <figure>
+                              <img src="../img/wl-kc.webp" alt="portada King Crimson - The court of the crimson king">
+                              <!-- inicia accordion -->
+                              <div class="accordion accordion-flush" id="accordionFlushExample">
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="flush-headingOne">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                          aria-controls="flush-collapseOne">
+                                          Track-list
+                                       </button>
+                                    </h3>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                       aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                       <p class="accordion-body">
+                                       <ul>
+                                          <li>
+                                             «21st Century Schizoid Man» (incluyendo «Mirrors») (7:21)
+                                          </li>
+                                          <li>
+                                             «I Talk to the Wind» (6:06)
+                                          </li>
+                                          <li>
+                                             «Epitaph» (incluyendo «March for No Reason» y «Tomorrow and Tomorrow») (8:47)
+                                          </li>
+                                          <li>
+                                             «Moonchild» (incluyendo «The Dream» y «The Illusion») (12:13)
+                                          </li>
+                                          <li>
+                                             «The Court of the Crimson King» (incluyendo «The Return of the Fire Witch» y
+                                             «The Dance of the Puppets») (9:25)
+                                          </li>
+                                       </ul>
+                                       </p>
+                                    </div>
+                                    <div class="accordion-item">
+                                       <h3 class="accordion-header" id="flush-headingTwo">
+                                          <button class="accordion-button collapsed" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                             aria-expanded="false" aria-controls="flush-collapseTwo">
+                                             Data
+                                          </button>
+                                       </h3>
+                                       <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                          aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                          <p class="accordion-body">
+                                             Publicación
+                                             10 de octubre de 1969
+                                             Género(s)
+                                             Rock progresivo Rock sinfónico
+                                             Duración 43ː45
+                                             Discográfica
+                                             Island Records
+                                             Atlantic Records
+                                             Productor(es) King Crimson
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- termina accordion -->
+                           </figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- img trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+               <img src="../img/wl-billy.webp" alt="Portada Billy Bond y La pesada del Rock vol. 1 ">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content modal-est modal-bgim">
+                     <div class="modal-header modal-bg">
+                        <h2 class="modal-title" id="exampleModalLabel">Billy Bond y La pesada del Rock vol. 1</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <figure>
+                           <img src="../img/wl-billy.webp" alt="Portada Billy Bond y La pesada del Rock vol. 1">
+                           <!-- inicia accordion -->
+                           <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                 <h3 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                       aria-controls="flush-collapseOne">
+                                       Track-list
+                                    </button>
+                                 </h3>
+                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <p class="accordion-body">
+                                    <ul>
+                                       <li>
+                                          «Salgan al Sol» (3:16)
+                                       </li>
+                                       <li>
+                                          «Divertido (Reventado)» (1:39)
+                                       </li>
+                                       <li>
+                                          «Verdes Prados» (3:01)
+                                       </li>
+                                       <li>
+                                          «Buen Día Sr. Presidente» (4:34)
+                                       </li>
+                                       <li>
+                                          «El Parque» (4:39)
+                                       </li>
+                                       <li>
+                                          «Cada Día Somos Más» (4:32)
+                                       </li>
+                                       <li>
+                                          «Dueño de Tu Piel» (2:24)
+                                       </li>
+                                       <li>
+                                          «Voy Creciendo» (8:43)
+                                       </li>
+                                    </ul>
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <h3 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                       aria-controls="flush-collapseTwo">
+                                       Data
+                                    </button>
+                                 </h3>
+                                 <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <p class="accordion-body">
+                                       Publicación Julio de 1971
+                                       Género(s) Blues rock
+                                       Rock psicodélico
+                                       Hard rock
+                                       Discográfica Music Hall (Pelo Music, reedición)
+                                       Productor(es) Jorge Álvarez, Pedro Pujó & Ricardo Kleinman
+                                       Billy Bond (mánager de grabación)
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- termina accordion -->
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
-   <!-- comienza main -->
-   <main>
-      <section> </section> 
-   </main>
+            <!-- img trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+               <img src="../img/wl-sabbath.webp" alt="Portada album Black Sabbath - Sabbath Bloody Sabbath">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content modal-est modal-bgim">
+                     <div class="modal-header modal-bg">
+                        <h2 class="modal-title" id="exampleModalLabel">Black Sabbath - Sabbath Bloody Sabbath</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <figure>
+                           <img src="../img/wl-sabbath.webp" alt="Portada album Black Sabbath - Sabbath Bloody Sabbath">
+                           <!-- inicia accordion -->
+                           <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                 <h3 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                       aria-controls="flush-collapseOne">
+                                       Track-list
+                                    </button>
+                                 </h3>
+                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <p class="accordion-body">
+                                    <ul>
+                                       <li>
+                                          «Sabbath Bloody Sabbath» (5:46)
+                                       </li>
+                                       <li>
+                                          «A National Acrobat» (6:17)
+                                       </li>
+                                       <li>
+                                          «Fluff» (4:12)
+                                       </li>
+                                       <li>
+                                          «Sabbra Cadabra» (5:58)
+                                       </li>
+                                       <li>
+                                          «Killing Yourself to Live» (5:41)
+                                       </li>
+                                       <li>
+                                          «Who Are you» (4:12)
+                                       </li>
+                                       <li>
+                                          «Looking For Today» (5:00)
+                                       </li>
+                                       <li>
+                                          «Spiral Architect» (5:30)
+                                       </li>
+                                    </ul>
+                                    </p>
+                                 </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="flush-headingTwo">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                          aria-controls="flush-collapseTwo">
+                                          Data
+                                       </button>
+                                    </h3>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                       aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                       <p class="accordion-body">
+                                          Publicación	1 de diciembre de 1973
+                                          Género(s)	Heavy metal
+                                          Doom Metal
+                                          Duración	42:35
+                                          Discográfica	World Wide Artists
+                                          Vertigo
+                                          Warner Bros. (EE. UU./Canadá)
+                                          Productor(es)	Black Sabbath
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- termina accordion -->
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- img trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+               <img src="../img/wl-seru.webp" alt="Portada album Seru giran - Peperina">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content modal-est modal-bgim">
+                     <div class="modal-header modal-bg">
+                        <h2 class="modal-title" id="exampleModalLabel">Seru giran - Peperina</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <figure>
+                           <img src="../img/wl-seru.webp" alt="Portada album Seru giran - Peperina">
+                           <!-- inicia accordion -->
+                           <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                 <h3 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                       aria-controls="flush-collapseOne">
+                                       Track-list
+                                    </button>
+                                 </h3>
+                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <p class="accordion-body">
+                                    <ul>
+                                       <li>
+                                          «Peperina» (3:42)
+                                       </li>
+                                       <li>
+                                          «Llorando en el espejot» (4:03)
+                                       </li>
+                                       <li>
+                                          «Parado en el medio de la vida» (2:22)
+                                       </li>
+                                       <li>
+                                          «Cara de velocidad» (2:40)
+                                       </li>
+                                       <li>
+                                          «Esperando nacer» (5:44)
+                                       </li>
+                                       <li>
+                                          «Veinte trajes verdes» (2:05)
+                                       </li>
+                                       <li>
+                                          «Cinema verité» (4:55)
+                                       </li>
+                                       <li>
+                                          «En la vereda del sol» (3:45)
+                                       </li>
+                                       <li>
+                                          «José Mercado» (3:32)
+                                       </li>
+                                       <li>
+                                          «Salir de la melancolía» (2:07)
+                                       </li>
+                                       <li>
+                                          «Lo que dice la lluvia» (5:07)
+                                       </li>
+                                    </ul>
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <h3 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                       aria-controls="flush-collapseTwo">
+                                       Data
+                                    </button>
+                                 </h3>
+                                 <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <p class="accordion-body">
+                                       Publicación Agosto de 1981
+                                       Género(s) Rock progresivo, rock, rock and roll
+                                       Duración 40:02 
+                                       Discográfica SG Discos
+                                       Productor(es) Serú Girán
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- termina accordion -->
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- img trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+               <img src="../img/wl-sui.webp" alt="Portada album Sui Generis - Pequeñas anecdotas sobre las instituciones">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content modal-est modal-bgim">
+                     <div class="modal-header modal-bg">
+                        <h2 class="modal-title" id="exampleModalLabel"> Sui Generis - Pequeñas anecdotas sobre las
+                           instituciones</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <figure>
+                           <img src="../img/wl-sui.webp"
+                              alt="Portada album Sui Generis - Pequeñas anecdotas sobre las instituciones">
+                           <!-- inicia accordion -->
+                           <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                 <h3 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                       aria-controls="flush-collapseOne">
+                                       Track-list
+                                    </button>
+                                 </h3>
+                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <p class="accordion-body">
+                                    <ul>
+                                       <li>
+                                          «Instituciones» (4:53)
+                                       </li>
+                                       <li>
+                                          «Tango en segunda» (3:32)
+                                       </li>
+                                       <li>
+                                          «El show de los muertos» (6:04)
+                                       </li>
+                                       <li>
+                                          «Las increíbles aventuras del Sr. Tijeras» (5:53)
+                                       </li>
+                                       <li>
+                                          «Pequeñas delicias de la vida conyugal» (3:43)
+                                       </li>
+                                       <li>
+                                          «El tuerto y los ciegos» (2:04)
+                                       </li>
+                                       <li>
+                                          «Música de fondo para cualquier fiesta animada» (4:35)
+                                       </li>
+                                       <li>
+                                          «Tema de Natalio» (6:07)
+                                       </li>
+                                       <li>
+                                          «Para quién canto yo entonces» (3:43)
+                                       </li>
+                                       <li>
+                                          «Juan Represión» (3:29)
+                                       </li>
+                                       <li>
+                                          «Botas Locas» (4:54)
+                                       </li>
+                                    </ul>
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <h3 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                       aria-controls="flush-collapseTwo">
+                                       Data
+                                    </button>
+                                 </h3>
+                                 <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <p class="accordion-body">
+                                       Publicación
+                                       16 de diciembre de 1974
+                                       Género(s)
+                                       Rock sinfónico, rock progresivo, folk progresivo
+                                       Duración
+                                       40:34
+                                       Discográfica
+                                       Talent (Subsello de Microfón Argentina S.A.)
+                                       Productor(es)
+                                       Jorge Álvarez
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- termina accordion -->
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
    <!-- termina main -->
 
    <!-- inicia footer -->
-   <footer class="text-center">  
-         <a href="https://www.instagram.com/nadadevinilos/"><img src="../img/logo-fb.png" alt="red social facebook"></a>
-         <a href="https://www.instagram.com/nadadevinilos/"><img src="../img/logo-instagram.png" alt="red social instagram"></a>
-         <a href="https://www.instagram.com/nadadevinilos/"><img class="tamaño__pie--md" src="../img/logo-yt.png" alt="red social youtube"></a>
+   <footer class="text-center">
+      <a href="https://www.instagram.com/nadadevinilos/"><img src="../img/logo-fb.png" alt="red social facebook"></a>
+      <a href="https://www.instagram.com/nadadevinilos/"><img src="../img/logo-instagram.png"
+            alt="red social instagram"></a>
+      <a href="https://www.instagram.com/nadadevinilos/"><img class="tamaño__pie--md" src="../img/logo-yt.png"
+            alt="red social youtube"></a>
    </footer>
    <!-- termina footer -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>

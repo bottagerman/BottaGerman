@@ -1,10 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3 {
+  color: orange;
+}
+
+body {
+  background-image: url(../img/bg-paper.jpg);
+}
+
 .botonera {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   background-color: rgba(94, 118, 252, 0.7);
+}
+.botonera button {
+  color: orange;
 }
 .botonera ul {
   display: flex;
@@ -14,10 +36,11 @@
   padding: 10px;
 }
 .botonera ul li a {
-  text-decoration: none;
-  color: orange;
   font-family: "Oswald", sans-serif;
-  font-size: 2em;
+  font-size: 3em;
+  line-height: 3em;
+  color: orange;
+  text-decoration: none;
 }
 .botonera ul li a:hover {
   color: black;
@@ -25,47 +48,452 @@
   transition: all 0.5s;
 }
 
-.checkbtn {
-  order: 2;
-  cursor: pointer;
-  font-size: 2em;
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  line-height: 2em;
   color: orange;
-  display: none;
-  margin-right: 20px;
 }
 
-#check {
-  display: none;
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.encabezado img {
+  width: 24vw;
 }
 
-@media screen and (max-width: 907px) {
-  .botonera {
-    height: 25vh;
-  }
-  .botonera ul {
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenido h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  line-height: 1.5em;
+  color: orange;
+  margin-top: 25px;
+}
+.contenido section {
+  margin: 10px 20px;
+}
+.contenido section p {
+  font-style: italic;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2em;
+  line-height: 1.3em;
+  color: black;
+}
+.contenido h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  line-height: 1.5em;
+  color: orange;
+}
+
+.side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.side button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  margin: 15px;
+}
+.side button img {
+  width: 15vw;
+  border-radius: 5px;
+}
+.side figure {
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: orange;
+}
+.side figure img {
+  border-radius: 5px;
+}
+.side figure p {
+  margin-top: 10px;
+}
+.side h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: orange;
+}
+
+.modal-est {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  color: orange;
+}
+
+.modal-bg {
+  background-color: rgba(94, 118, 252, 0.7);
+}
+
+.modal-bgim {
+  background-image: url(../img/bg-paper.jpg);
+}
+
+@media (max-width: 900px) {
+  .encabezado {
+    display: flex;
     flex-direction: column;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(94, 118, 252, 0.7);
-    top: 25vh;
-    left: 100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  .botonera ul li {
-    display: block;
+    justify-content: flex-start;
     align-items: center;
-    margin: 25px 0;
-    line-height: 5px;
+    flex-wrap: wrap;
+  }
+  .encabezado img {
+    width: 100%;
+    height: auto;
+  }
+  .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .side button img {
+    width: 100%;
   }
 }
-.checkbtn {
-  display: block;
+.encabezado-vin input {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  line-height: 0.5em;
+  color: rgba(177, 177, 177, 0.795);
+  border: 10px bold gray;
+  margin-top: 20px;
+  text-align: center;
+}
+.encabezado-vin h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4.5em;
+  line-height: 2em;
+  color: orange;
 }
 
-#check:checked ~ ul {
-  left: 0;
+.contenido-vin section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.contenido-vin section button {
+  border-radius: 4px;
+  margin: 10px 10px;
+}
+.contenido-vin section button img {
+  width: 15vw;
+  border-radius: 5px;
+}
+
+.side-vin {
+  border: 3px solid rgba(94, 118, 252, 0.7);
+}
+.side-vin h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  line-height: 1em;
+  color: orange;
+  margin-left: 20px;
+}
+.side-vin ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.side-vin ul li {
+  list-style: none;
+}
+.side-vin ul li a {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+  color: black;
+  text-decoration: none;
+}
+.side-vin ul li a:hover {
+  color: orange;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.pie-vin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .contenido-vin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contenido-vin section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contenido-vin section button img {
+    width: 100%;
+  }
+}
+.encabezado-art input {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  line-height: 0.5em;
+  color: rgba(177, 177, 177, 0.795);
+  border: 10px bold gray;
+  margin-top: 20px;
+  text-align: center;
+}
+.encabezado-art h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4.5em;
+  line-height: 2em;
+  color: orange;
+}
+
+.contenido-art {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenido-art figure {
+  display: flex;
+}
+.contenido-art figure img {
+  border-radius: 5px;
+}
+.contenido-art section {
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  line-height: 2em;
+  color: black;
+  margin: 10px 10px;
+  border: 3px solid orange;
+  padding: 10px 10px;
+  font-style: italic;
+}
+
+.side-art {
+  border: 3px solid rgba(94, 118, 252, 0.7);
+  margin: 10px 10px;
+}
+.side-art h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5em;
+  line-height: 1em;
+  color: orange;
+  padding: 0px 10px;
+}
+.side-art ul {
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.side-art ul li {
+  list-style: none;
+}
+.side-art ul li a {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+  color: black;
+  text-decoration: none;
+}
+.side-art ul li a:hover {
+  color: orange;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+@media (max-width: 900px) {
+  .contenido-art figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.encabezado-gui h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4em;
+  line-height: 3em;
+  color: orange;
+  text-align: center;
+}
+.encabezado-gui img {
+  margin: 0px 30px;
+}
+
+.contenido-gui {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: black;
+}
+.contenido-gui section {
+  text-align: start;
+  margin: 10px 30px;
+}
+.contenido-gui section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: orange;
+}
+.contenido-gui section p {
+  border: 1px solid orange;
+  font-style: italic;
+  padding: 10px 10px;
+}
+.contenido-gui section img {
+  margin: 10px 30px;
+}
+
+@media (max-width: 900px) {
+  .encabezado-gui {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .encabezado-gui img {
+    width: 80%;
+  }
+  .contenido-gui section {
+    width: 80%;
+  }
+  .contenido-gui section img {
+    width: 80%;
+  }
+}
+.encabezado-wi input {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  line-height: 0.5em;
+  color: rgba(177, 177, 177, 0.795);
+  border: 10px bold gray;
+  margin-top: 20px;
+  text-align: center;
+}
+.encabezado-wi h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4.5em;
+  line-height: 2em;
+  color: orange;
+  text-align: center;
+}
+
+.contenido-wi section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenido-wi section button {
+  border-radius: 4px;
+  margin: 10px 10px;
+}
+.contenido-wi section button img {
+  width: 15vw;
+  border-radius: 5px;
+}
+.contenido-wi section figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenido-wi section figure p {
+  margin-top: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  color: orange;
+}
+.contenido-wi section figure h3 button {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  color: black;
+  background-color: rgba(94, 118, 252, 0.7);
+  width: 100%;
+}
+.contenido-wi section figure ul {
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  color: black;
+}
+.contenido-wi section figure ul li {
+  list-style: decimal;
+}
+
+@media (max-width: 900px) {
+  .contenido-wi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contenido-wi section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contenido-wi section button img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,106 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artistas</title>
-    <link rel="icon" href="../img/favicon.ico" type="img/jpg">
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/slyle.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Artistas que se encuentran en mis discos favoritos de mi coleccion de Vinilos.">
+   <meta name="keywords" content="Artistas, Musica, Vinilos, Guitarristas, Cantantes, Pianistas, Tecladistas, Pappo Napolitano, Jimmy Page, Miguel Abuelo, Keith Emerson,">
+    <meta name="author" content="German Botta">
+   <title>Listado de artistas de primera </title>
+   <link rel="icon" href="../img/favicon.ico" type="img/jpg">
+   <link rel="stylesheet" href="../css/animate.css">
+   <link rel="stylesheet" href="../css/main.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
    <!-- Inicia nav -->
-   <nav class="botonera">
-      <input type="checkbox" id="check" >
-      <label for="check" class="checkbtn">
-         <i class="fas fa-bars"></i>
-      </label>
-      <a href=../index.html class="enlace"><img src="../img/logo-3-copy.png" alt="logo de nada de vinilos" class="logo"> </a>
-      <ul>
-         <li>
-            <a href="vinilos.html">Vinilos</a>
-         </li>
-       
-      
-         <li>
-            <a href="artistas.html">Artistas</a>
-         </li>
-       
-      
-         <li>
-            <a href="historia.html">Historia</a>
-         </li>
-       
-      
-         <li>
-            <a href="wishlist.html">Wishlist</a>
-         </li>
-      </ul> 
-
+   <nav class="navbar navbar-expand-lg botonera">
+      <div class="container-fluid">
+         <a class="navbar-brand animate__animated animate__rotateIn" href="../index.html">
+            <img src="../img/logo-3-copy.png" alt="disco de vinilo logo de nada de vinilos">
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="vinilos.html">Vinilos</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="artistas.html">Artistas</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="guia.html">Guía</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="wishlist.html">Wishlist</a>
+               </li>
+            </ul>
+         </div>
+      </div>
    </nav>
    <!-- termina nav -->
 
    <!-- comienza header -->
-   <header>
-      <input type="search">
-      <h1 class="text-center">Artistas</h1> 
-   </header>
-   <!-- termina header -->
+   <div class="grid-art">
+      <header class="encabezado-art">
+         <input type="search" value="Artista, banda, etc..">
+         <h1 class="text-center">Artistas</h1>
+      </header>
+      <!-- termina header -->
 
-   <!-- comienza main -->
-   <main>   
-      <div> 
-         <figure">
-            <img class="artista__tamaño--large text-center" src="../img/pappo-napo.webp" alt="foto de pappo napolitano tocando la guitarra">
-            <p>Norberto Anibal Napolitano</p>
-         </figure> 
-         <figure>
-            <img class="artista__tamaño--large text-center" src="../img/miguel-abuelo.webp" alt="foto de miguel abuelo meditando"> 
-            <p>Miguel Abuelo</p>
-         </figure> 
-         <figure>
-            <img class="artista__tamaño--large text-center" src="../img/jimmy-page.webp" alt="foto de jimmy page tocando la guitarra"> 
-            <p>Jimmy Page</p> 
-         </figure> 
-         <figure>
-            <img class="artista__tamaño--large  text-center" src="../img/keith-emerson.webp" alt="keith emerson tecladista de emerson lake and palmer tocando el teclado en el piso">
-            <p>Keith Emerson</p> 
-         </figure> 
-    </div>
-      <section> 
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam asperiores commodi saepe voluptatem vitae praesentium qui facere officia, culpa consectetur amet nesciunt quos dolores magnam alias delectus excepturi perspiciatis eveniet.</p>
-      </section>
-   </main>
-   <!-- termina main -->
+      <!-- comienza main -->
+      <main class="contenido-art">
+         <div>
+            <figure>
+               <img class="artista__tamaño--large text-center" src="../img/pappo-napo.webp"
+                  alt="foto de pappo napolitano tocando la guitarra">
 
-   <!-- inicia aside -->
-   <aside> 
-      <div>
-         <h3> Filtros</h3>
-         <ul>
-            <li> 
-               Banda
-            </li>
-            <li>
-               Instrumento
-            </li>
-            <li>
-               Año
-            </li>
-         </ul>
 
-      </div>
-   </aside>
-   <!-- termina aside -->
+               <img class="artista__tamaño--large text-center" src="../img/miguel-abuelo.webp"
+                  alt="foto de miguel abuelo meditando">
 
+
+
+               <img class="artista__tamaño--large text-center" src="../img/jimmy-page.webp"
+                  alt="foto de jimmy page tocando la guitarra">
+
+
+
+               <img class="artista__tamaño--large  text-center" src="../img/keith-emerson.webp"
+                  alt="keith emerson tecladista de emerson lake and palmer tocando el teclado en el piso">
+
+            </figure>
+         </div>
+         <section>
+            <p>Iconos, super-estrellas, guitarristas, cantantes, pianistas. Ellos, los que ponen la cara, el talento y
+               toda su creatividad a la hora de componer la musica que mañana (o ayer) disfrutamos.
+               Cada uno de ellos paso por distintos grupos, creciendo artisticamente hasta el punto de alcanzar el hito
+               de sus carrera. Desde aca se va a poder hacer un repaso de sus carreras rapidamente. </p>
+         </section>
+      </main>
+      <!-- termina main -->
+
+      <!-- inicia aside -->
+      <aside class="side-art">
+         <div>
+            <h3> Filtros</h3>
+            <ul>
+               <li>
+                  <a href="#">Banda</a>
+               </li>
+               <li>
+                  <a href="#">Artista</a>
+               </li>
+               <li>
+                  <a href="#">Año</a>
+               </li>
+            </ul>
+
+         </div>
+      </aside>
+      <!-- termina aside -->
+   </div>
    <!-- inicia footer -->
-   <footer class="text-center">  
+   <footer class="text-center">
       <a href="https://www.instagram.com/nadadevinilos/"><img src="../img/logo-fb.png" alt="red social facebook"></a>
-      <a href="https://www.instagram.com/nadadevinilos/"><img src="../img/logo-instagram.png" alt="red social instagram"></a>
-      <a href="https://www.instagram.com/nadadevinilos/"><img class="tamaño__pie--md" src="../img/logo-yt.png" alt="red social youtube"></a>
+      <a href="https://www.instagram.com/nadadevinilos/"><img src="../img/logo-instagram.png"
+            alt="red social instagram"></a>
+      <a href="https://www.instagram.com/nadadevinilos/"><img class="tamaño__pie--md" src="../img/logo-yt.png"
+            alt="red social youtube"></a>
    </footer>
    <!-- termina footer -->
+   <!-- bj js -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>

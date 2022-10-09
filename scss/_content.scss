@@ -1,0 +1,82 @@
+h1{
+    @include text ($textXxl, 2em, $mainColor);
+}
+.encabezado{
+    @include flex (row, center, center, wrap);
+    img{
+        width: $vw-24;
+    }
+}
+.contenido{
+    @include flex (column, center, center, wrap);
+    h2{
+        @include text (3em, 1.5em, $mainColor);
+        margin-top: 25px;
+    }
+    section{
+        margin: 10px 20px;
+        p{
+            font-style: italic;
+            @include text (2.2em, 1.3em, black)
+        }
+
+    }
+    h3{
+        @include text (3em, 1.5em, $mainColor);
+    }
+}
+.side{
+    @include flex (row, center, center, wrap);
+    button{
+        @include flex (row, center, center, wrap);
+        border-radius: 4px;
+        margin: 15px;
+        img{
+            width: $vw-15;
+            border-radius: 5px;
+        }
+    }
+    figure{
+        @include text (2em, 1.5em, $mainColor);
+        img{
+            border-radius: 5px
+        };
+        p{
+            margin-top: 10px
+        }
+
+    }
+    h4{
+        @include text (2em, 1.5em, $mainColor);
+
+    }
+}
+.modal-est{
+    @include text (1em, 1em, $mainColor)
+
+}
+.modal-bg{
+    background-color: $secondaryColor;
+}
+.modal-bgim{
+    background-image: url(../img/bg-paper.jpg);
+}
+//media
+@media (max-width: 900px){
+    .encabezado{
+        @include flex (column,flex-start, center, wrap);
+        img{
+            width: $w-100;
+            height: auto;
+        }
+
+    }
+    .side{
+        @include flex (column,flex-start, center, wrap);
+        button{
+            img{
+                width: $w-100;
+            }
+        }
+    }
+}

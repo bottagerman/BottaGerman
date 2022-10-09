@@ -1,0 +1,64 @@
+.encabezado-art{
+    input{
+        width: $w-100;
+        @include text (2em, .5em, $gris);
+        border: 10px bold gray;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+    h1{
+        @include text (4.5em, 2em, $mainColor);
+    }
+}
+.contenido-art{
+    @include flex (row, center, center, wrap);
+    figure{
+        display: flex;
+        img{
+            border-radius: 5px;
+        }
+    }
+    section{
+        @include text (2em, 2em, $negro);
+        margin: 10px 10px;
+        border: 3px solid $mainColor;
+        padding: 10px 10px;
+        font-style: italic;
+    }
+
+}
+.side-art{
+    border: 3px solid $secondaryColor;
+    margin: 10px 10px;
+    h3{
+    @include text(2.5em,1em,$mainColor);
+    padding: 0px 10px;
+    }
+    ul{
+        padding: 10px 10px;
+        @include flex (column, flex-end, flex-start, wrap);
+        li{
+            list-style: none;
+            a{
+                @include text(1.5em,1em,$negro);
+                text-decoration: none;
+                &:hover{
+                    color: $mainColor;
+                    font-weight: $textBold;
+                    transition: all .3s;
+                }
+            }
+        }
+        
+    }
+}
+//media
+@media (max-width: 900px){
+    .contenido-art{
+        figure{
+            @include flex (row, center, center, wrap);
+        }
+        
+    }
+}

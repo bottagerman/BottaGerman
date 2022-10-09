@@ -2,7 +2,7 @@
 $mainColor: orange;
 $secondaryColor: rgba(94, 118, 252, .7);
 $negro: black;
-$gris: gray; 
+$gris:  rgba(177, 177, 177, 0.795); 
 
 //sizing
 $w-100: 100%;
@@ -14,3 +14,23 @@ $vh-100: 100vh;
 $vh-50: 50vh;
 $vh-35: 35vh;
 $vh-25: 25vh;
+
+//universales
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1, h2, h3{
+    color: orange;
+}
+body{
+    background-image: url(../img/bg-paper.jpg);
+}
+
