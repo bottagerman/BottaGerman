@@ -1,5 +1,5 @@
-.encabezado-art{
-    input{
+.encabezado-art {
+    input {
         width: $w-100;
         @include text (2em, .5em, $gris);
         border: 10px bold gray;
@@ -7,58 +7,95 @@
         text-align: center;
 
     }
-    h1{
+
+    h1 {
         @include text (4.5em, 2em, $mainColor);
     }
 }
-.contenido-art{
+.container{
+    @include flex (row, center, flex-end, wrap);
+    
+    
+}
+.contenido-art {
     @include flex (row, center, center, wrap);
-    figure{
+
+    figure {
         display: flex;
-        img{
+
+        img {
+            margin: 20px 20px;
             border-radius: 5px;
+            &:hover{
+                cursor: pointer;
+                border: 2px solid $mainColor;
+                transition: all .2s
+                
+            }
         }
     }
-    section{
+
+    section {
         @include text (2em, 2em, $negro);
-        margin: 10px 10px;
-        border: 3px solid $mainColor;
-        padding: 10px 10px;
-        font-style: italic;
+
+        p {
+            margin: 10px 10px;
+            border: 3px solid $mainColor;
+            font-style: italic;
+            padding: 10px 10px;
+        }
+
+        figure {
+            justify-content: center;
+        }
+
     }
 
 }
-.side-art{
-    border: 3px solid $secondaryColor;
+
+.side-art {
+    border: 2px solid $secondaryColor;
     margin: 10px 10px;
-    h3{
-    @include text(2.5em,1em,$mainColor);
-    padding: 0px 10px;
-    }
-    ul{
+    padding: 10px 20px;
+
+    h2 {
+        @include text(3em, 1em, $mainColor);
         padding: 10px 10px;
-        @include flex (column, flex-end, flex-start, wrap);
-        li{
+    }
+
+    ul {  
+       
+        
+
+        li {
             list-style: none;
-            a{
-                @include text(1.5em,1em,$negro);
+            text-align: start;
+            margin-right: 10px;
+
+
+
+            a {
+                @include text(2em, 1em, $negro);
                 text-decoration: none;
-                &:hover{
+
+
+                &:hover {
                     color: $mainColor;
                     font-weight: $textBold;
                     transition: all .3s;
                 }
             }
         }
-        
+
     }
 }
+
 //media
-@media (max-width: 900px){
-    .contenido-art{
-        figure{
+@media (max-width: 900px) {
+    .contenido-art {
+        figure {
             @include flex (row, center, center, wrap);
         }
-        
+
     }
 }

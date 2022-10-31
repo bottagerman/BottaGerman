@@ -1,5 +1,5 @@
-.encabezado-wi{
-    input{
+.encabezado-wi {
+    input {
         width: $w-100;
         @include text (2em, .5em, $gris);
         border: 10px bold gray;
@@ -7,55 +7,93 @@
         text-align: center;
 
     }
-    h1{
+
+    h1 {
         @include text (4.5em, 2em, $mainColor);
         text-align: center;
     }
 }
-.contenido-wi{
-    section{
+
+.contenido-wi {
+    section {
         @include flex (row, center, center, wrap);
-        button{
+        border: 2px solid orange;
+
+        button {
+            width: fit-content;
             border-radius: 4px;
             margin: 10px 10px;
-            img{ 
+
+            img {
                 width: $vw-15;
                 border-radius: 5px;
             }
 
         }
-        figure{
-            @include flex (row, flex-start, center, wrap);
-            p{
-                margin-top: 10px;
-                @include text (2em, 1em, $mainColor);
-            } 
-            h3{
-                button{
-                    
-                    @include text (1em, 2em, $negro);
-                    background-color: $secondaryColor;
-                    width: $w-100;
-                }
+
+        figure {
+            
+            border-radius: 4px;
+
+            p {
+                margin: 10px 10px;
+                @include text (2em, 2em, $mainColor);
+            }
+
+            button {
+
+                @include text (1em, 2em, $negro);
+                background-color: $secondaryColor;
 
             }
-            ul{
+
+            ul {
                 @include text (2em, 1em, $negro);
-                li{
-                    list-style: decimal;
-                }  
+
             }
         }
-        
+
     }
 }
-@media (max-width: 900px){
-    .contenido-wi{
+
+.card {
+    position: static;
+    @include flex (row, center, center, wrap);
+    margin: 15px 15px;
+
+    ul {
+
+        @include text (1.5em, 1.5em, $secondaryColor);
+
+        li {
+            list-style: decimal;
+        }
+    }
+
+    &:hover {
+        border: 2px solid orange;
+        border-radius: 2px;
+        transition: all 0.1s;
+    }
+}
+
+.accordion-item {
+    button {
+        border: 2px solid orange;
+        background-color: $secondaryColor;
+        @include text (1em, 1em, $negro)
+    }
+}
+
+@media (max-width: 900px) {
+    .contenido-wi {
         @include flex (row, center, center, wrap);
-        section{
+
+        section {
             @include flex (row, center, center, wrap);
-            button{
-                img{
+
+            button {
+                img {
                     width: $w-100;
                 }
             }

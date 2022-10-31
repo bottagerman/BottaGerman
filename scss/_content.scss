@@ -1,5 +1,16 @@
-h1{
-    @include text ($textXxl, 2em, $mainColor);
+
+.botonera{
+    button{
+        img{
+            width: 30px;
+            height: auto           
+
+        }
+    }
+}
+.h1{
+    @include text (2em, 2em, $mainColor);
+    text-align: center
 }
 .encabezado{
     @include flex (row, center, center, wrap);

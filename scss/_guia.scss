@@ -1,16 +1,20 @@
 .encabezado-gui{
+    @include flex(row, center, center, wrap);
     h1{
         @include text (4em, 3em, $mainColor);
         text-align: center;
+        margin: -30px 0;
     }
     img{
-        margin: 0px 30px
+        order: -1;
+        margin: 30px 30px;
     }
 }
 .contenido-gui{
     @include flex(column, center, center, wrap);
     @include text(2em, 1.5em, $negro );
     section{
+        @include flex(row, center, center, wrap);
         text-align: start;
         margin: 10px 30px;
         h2{
@@ -31,12 +35,14 @@
     .encabezado-gui{
         @include flex(column, center, center, wrap);
         img{
+
             width: 80%;
         }
 
     }
     .contenido-gui{
         section{
+            @include flex(column, center, center, wrap);
             width: 80%;
             img{
                 width: 80%;
